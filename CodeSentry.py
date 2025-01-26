@@ -455,7 +455,6 @@ def scan_website(url):
 
     return vulnerabilities
 
-# Report Generation
 def generate_report(vulnerabilities, output_format="text"):
     """
     Generate a report of detected vulnerabilities.
@@ -468,7 +467,6 @@ def generate_report(vulnerabilities, output_format="text"):
             report.append(f"{vuln['type']}: {vuln['message']}")
         return "\n".join(report)
 
-# Command-Line Interface
 def main():
     parser = argparse.ArgumentParser(description="CodeSentry")
     parser.add_argument("--file", help="Path to the file to analyze (Python, JavaScript, Java, or Ruby)")
