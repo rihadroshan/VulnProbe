@@ -1,4 +1,4 @@
-**CodeSentry** is a robust and comprehensive tool designed to scan websites and source code for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
+**CodeSentry** is a robust and comprehensive tool designed to scan web and source code for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
 
 ## Features
 
@@ -14,7 +14,7 @@
   - DOM-based XSS (JavaScript)
   - Use of `innerHTML` (JavaScript)
 
-### Website Scanning
+### Web Scanning
 - **Checks for**:
   - Insecure HTTP vs HTTPS
   - Invalid HTTPS certificates
@@ -49,8 +49,8 @@
 python CodeSentry.py --file <path_to_file> --format <text|json>
 ```
 ```bash
-# Scan website
-python CodeSentry.py --url <website_url> --format <text|json>
+# Scan web
+python CodeSentry.py --url <web_url> --format <text|json>
 
 ```
 
@@ -62,7 +62,7 @@ python CodeSentry.py --url <website_url> --format <text|json>
 python CodeSentry.py --file example.py --format json
 ```
 
-### Scan a Website
+### Scan a Web
 
 ```bash
 python CodeSentry.py --url https://example.com --format text
@@ -82,7 +82,7 @@ XSS: Potential XSS vulnerability detected (line 15).
 Insecure API: Insecure API 'eval' detected (line 20).
 ```
 
-### Example 2: Scanning a Website
+### Example 2: Scanning a Web
 ```bash
 python CodeSentry.py --url https://example.com --format json
 ```
@@ -92,7 +92,7 @@ python CodeSentry.py --url https://example.com --format json
 [
   {
     "type": "Insecure HTTP",
-    "message": "Website uses insecure HTTP (use HTTPS instead)."
+    "message": "Web uses insecure HTTP (use HTTPS instead)."
   },
   {
     "type": "Missing Security Header",
@@ -122,7 +122,7 @@ This tool is intended for educational and security testing purposes only. Use it
 
 ## Files in the Repository
 
-- **`CodeSentry.py`**: Main script for code analysis and website scanning.
+- **`CodeSentry.py`**: Main script for code analysis and web scanning.
 - **`requirements.txt`**: Python dependencies for the tool.
 - **`README.md`**: This readme file providing an overview and usage instructions.
 - **`LICENSE`**: MIT License terms.
