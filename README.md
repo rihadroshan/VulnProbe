@@ -106,7 +106,7 @@ python CodeSentry.py --url https://example.com --format json
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Contributions & Reporting Issues:
+## **Contributions & Reporting Issues:**
 
 Contributions of new features, improvements, or bug fixes are always welcome!
 
