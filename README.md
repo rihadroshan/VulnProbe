@@ -1,3 +1,5 @@
+**CodeSentry** is a robust and comprehensive tool designed to scan websites and source code for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
+
 ## Features
 
 ### Code Analysis
