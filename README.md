@@ -70,39 +70,6 @@ python CodeSentry.py --file example.py --format json
 python CodeSentry.py --url https://example.com --format text
 ```
 
-### Output Formats
-- **Text**: Human-readable plain text.
-- **JSON**: Structured JSON output.
-
----
-
-## **Supported Vulnerabilities**
-
-| Type                     | Detected Issues                                                                    |
-|--------------------------|------------------------------------------------------------------------------------|
-| **Python**               | SQL Injection, XSS, Insecure APIs, Hardcoded Secrets, Insecure HTTP, Pickle misuse |
-| **JavaScript**           | XSS, eval usage, Hardcoded Secrets, Insecure HTTP, DOM-based XSS, innerHTML misuse |
-| **Website**              | Insecure HTTP, SSL/TLS Certificate Issues, Mixed Content, Insecure Cookies         |
-| **Network**              | Open Ports Scanning                                                                |
-
----
-
-## Supported Languages
-
-### Python
-- Detects SQL injection, XSS, insecure APIs, hardcoded secrets, and more.
-
-### JavaScript
-- Detects XSS, use of `eval`, insecure HTTP requests, and DOM-based vulnerabilities.
-
-### Java
-- Detects SQL injection and other common vulnerabilities.
-
-### Ruby
-- Basic support for Ruby code analysis (work in progress).
-
----
-
 ## Examples
 
 ### Example 1: Analyzing Python Code
