@@ -15,9 +15,6 @@ from urllib.parse import urlparse
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 def detect_sql_injection(node):
-    """
-    Detect SQL injection vulnerabilities by checking for string formatting in SQL queries.
-    """
     if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute):
         if node.func.attr == 'execute' and isinstance(node.func.value, ast.Name):
             for arg in node.args:
@@ -26,9 +23,6 @@ def detect_sql_injection(node):
     return False
 
 def detect_xss(node):
-    """
-    Detect potential XSS vulnerabilities by checking for unsanitized user input in HTML output.
-    """
     if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute):
         if node.func.attr == 'write' and isinstance(node.func.value, ast.Name):
             for arg in node.args:
@@ -37,18 +31,12 @@ def detect_xss(node):
     return False
 
 def detect_insecure_api(node):
-    """
-    Detect the use of insecure APIs like `eval()` or `exec()`.
-    """
     if isinstance(node, ast.Call) and isinstance(node.func, ast.Name):
         if node.func.id in ['eval', 'exec']:
             return True
     return False
 
 def detect_insecure_http_py(node):
-    """
-    Detect insecure HTTP requests (http://) in Python code.
-    """
     if isinstance(node, ast.Str):
         if "http://" in node.s:
             return True
