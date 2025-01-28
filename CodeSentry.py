@@ -51,9 +51,6 @@ def detect_hardcoded_secrets_py(node):
     return False
 
 def detect_insecure_deserialization(node):
-    """
-    Detect insecure deserialization in Python code.
-    """
     if isinstance(node, ast.Call) and isinstance(node.func, ast.Attribute):
         if node.func.attr == "loads" and isinstance(node.func.value, ast.Name):
             if node.func.value.id == "pickle":
