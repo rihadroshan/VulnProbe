@@ -43,9 +43,6 @@ def detect_insecure_http_py(node):
     return False
 
 def detect_hardcoded_secrets_py(node):
-    """
-    Detect hardcoded secrets like API keys or passwords in Python code.
-    """
     if isinstance(node, ast.Assign):
         for target in node.targets:
             if isinstance(target, ast.Name) and isinstance(node.value, ast.Str):
