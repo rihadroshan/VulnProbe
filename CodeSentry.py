@@ -63,9 +63,6 @@ def detect_js_xss(node):
     return False
 
 def detect_js_eval(node):
-    """
-    Detect the use of `eval()` in JavaScript code.
-    """
     if node.type == "CallExpression" and node.callee.name == "eval":
         return True
     return False
