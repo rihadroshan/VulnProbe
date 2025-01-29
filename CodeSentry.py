@@ -58,9 +58,6 @@ def detect_insecure_deserialization(node):
     return False
 
 def detect_js_xss(node):
-    """
-    Detect potential XSS vulnerabilities in JavaScript code.
-    """
     if node.type == "AssignmentExpression" and node.left.property and node.left.property.name == "innerHTML":
         return True
     return False
