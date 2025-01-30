@@ -80,9 +80,6 @@ def detect_insecure_http_js(node):
     return False
 
 def detect_dom_xss(node):
-    """
-    Detect DOM-based XSS vulnerabilities in JavaScript code.
-    """
     if node.type == "CallExpression" and node.callee.property and node.callee.property.name == "write":
         return True
     return False
