@@ -85,9 +85,6 @@ def detect_dom_xss(node):
     return False
 
 def detect_inner_html(node):
-    """
-    Detect the use of `innerHTML` in JavaScript code.
-    """
     if node.type == "AssignmentExpression" and node.left.property and node.left.property.name == "innerHTML":
         return True
     return False
