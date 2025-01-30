@@ -90,10 +90,6 @@ def detect_inner_html(node):
     return False
 
 def traverse_esprima(node, vulnerabilities):
-    """
-    Recursively traverse the esprima AST and detect vulnerabilities.
-    """
-
     if detect_js_xss(node):
         vulnerabilities.append({
             "type": "XSS",
