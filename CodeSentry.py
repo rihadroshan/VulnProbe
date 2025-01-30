@@ -74,9 +74,6 @@ def detect_hardcoded_secrets(node):
     return False
 
 def detect_insecure_http_js(node):
-    """
-    Detect insecure HTTP requests (http://) in JavaScript code.
-    """
     if node.type == "Literal" and isinstance(node.value, str):
         if "http://" in node.value:
             return True
