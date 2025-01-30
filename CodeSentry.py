@@ -68,9 +68,6 @@ def detect_js_eval(node):
     return False
 
 def detect_hardcoded_secrets(node):
-    """
-    Detect hardcoded secrets like API keys or passwords in JavaScript code.
-    """
     if node.type == "VariableDeclarator" and node.init and node.init.type == "Literal":
         if "api_key" in str(node.init.value).lower() or "password" in str(node.init.value).lower():
             return True
