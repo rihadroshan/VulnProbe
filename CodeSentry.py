@@ -231,9 +231,6 @@ def check_insecure_http(url):
     return False
 
 def check_https_certificate(url):
-    """
-    Check if the HTTPS certificate is valid.
-    """
     if url.startswith("https://"):
         try:
             context = ssl.create_default_context()
