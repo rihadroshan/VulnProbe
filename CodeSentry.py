@@ -137,9 +137,6 @@ def traverse_esprima(node, vulnerabilities):
 
 # Source Code Analysis
 def analyze_code(file_path):
-    """
-    Analyze the given file (Python, JavaScript, Java, or Ruby) for vulnerabilities.
-    """
     vulnerabilities = []
 
     try:
@@ -229,9 +226,6 @@ def analyze_code(file_path):
 
 # Web Vulnerability Detectors
 def check_insecure_http(url):
-    """
-    Check if the website uses insecure HTTP instead of HTTPS.
-    """
     if url.startswith("http://"):
         return True
     return False
