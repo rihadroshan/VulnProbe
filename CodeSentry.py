@@ -224,7 +224,7 @@ def analyze_code(file_path):
 
     return vulnerabilities
 
-# Web Vulnerability Detectors
+# Web Vulnerability Scan
 def check_insecure_http(url):
     if url.startswith("http://"):
         return True
