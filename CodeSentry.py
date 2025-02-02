@@ -263,9 +263,6 @@ def check_security_headers(url):
     return missing_headers
 
 def check_insecure_cookies(url):
-    """
-    Check for insecure cookies (missing Secure or HttpOnly flags).
-    """
     insecure_cookies = []
 
     try:
