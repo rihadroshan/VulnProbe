@@ -242,9 +242,6 @@ def check_https_certificate(url):
     return True
 
 def check_security_headers(url):
-    """
-    Check for missing security headers.
-    """
     headers_to_check = [
         "Content-Security-Policy",
         "Strict-Transport-Security",
