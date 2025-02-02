@@ -279,9 +279,6 @@ def check_insecure_cookies(url):
     return insecure_cookies
 
 def detect_mixed_content(url):
-    """
-    Detect mixed content (HTTP resources loaded on an HTTPS page).
-    """
     mixed_content = []
 
     try:
