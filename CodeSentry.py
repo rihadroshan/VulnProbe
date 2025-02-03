@@ -312,7 +312,7 @@ def scan_ports(host, ports=[21, 22, 80, 443, 8080, 3306, 3389]):
     for port in ports:
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(2)  # Increase timeout to 2 seconds
+            sock.settimeout(2)
             result = sock.connect_ex((host, port))
             if result == 0:
                 open_ports.append(port)
