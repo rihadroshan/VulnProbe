@@ -307,8 +307,6 @@ def detect_clickjacking(url):
 
 # Port Scanning
 def scan_ports(host, ports=[21, 22, 80, 443, 8080, 3306, 3389]):
-r open ports on the target host.
-    """
     open_ports = []
 
     for port in ports:
