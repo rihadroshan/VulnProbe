@@ -296,9 +296,6 @@ def detect_mixed_content(url):
     return mixed_content
 
 def detect_clickjacking(url):
-    """
-    Detect missing headers to prevent clickjacking.
-    """
     try:
         response = requests.get(url)
         if "X-Frame-Options" not in response.headers and "Content-Security-Policy" not in response.headers:
