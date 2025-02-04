@@ -325,8 +325,6 @@ def scan_ports(host, ports=[21, 22, 80, 443, 8080, 3306, 3389]):
 
 def scan_website(url):
     """
-    Scan a website for vulnerabilities, including open ports.
-    """
     vulnerabilities = []
 
     parsed_url = urlparse(url)
@@ -392,9 +390,9 @@ def scan_website(url):
     return vulnerabilities
 
 def generate_report(vulnerabilities, output_format="text"):
-    """
+    
     Generate a report of detected vulnerabilities.
-    """
+    
     if output_format == "json":
         return json.dumps(vulnerabilities, indent=2)
     else:
