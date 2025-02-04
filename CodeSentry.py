@@ -351,7 +351,6 @@ def scan_website(url):
             "message": f"Missing security header: {header}."
         })
 
-    # Check for insecure cookies
     insecure_cookies = check_insecure_cookies(url)
     for cookie_message in insecure_cookies:
         vulnerabilities.append({
@@ -359,7 +358,6 @@ def scan_website(url):
             "message": cookie_message
         })
 
-    # Check for mixed content
     mixed_content = detect_mixed_content(url)
     if mixed_content:
         vulnerabilities.append({
