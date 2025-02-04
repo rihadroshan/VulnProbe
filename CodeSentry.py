@@ -332,7 +332,6 @@ def scan_website(url):
         logging.error(f"Could not extract host from URL: {url}")
         return vulnerabilities
 
-    # Check for insecure HTTP
     if check_insecure_http(url):
         vulnerabilities.append({
             "type": "Insecure HTTP",
