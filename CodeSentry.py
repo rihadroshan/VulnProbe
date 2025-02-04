@@ -324,7 +324,6 @@ def scan_ports(host, ports=[21, 22, 80, 443, 8080, 3306, 3389]):
     return open_ports
 
 def scan_website(url):
-    """
     vulnerabilities = []
 
     parsed_url = urlparse(url)
