@@ -371,7 +371,6 @@ def scan_website(url):
             "message": f"Insecure resources loaded over HTTP: {', '.join(mixed_content)}."
         })
 
-    # Check for clickjacking
     if detect_clickjacking(url):
         vulnerabilities.append({
             "type": "Clickjacking",
