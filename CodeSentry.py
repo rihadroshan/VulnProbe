@@ -338,14 +338,12 @@ def scan_website(url):
             "message": "Website uses insecure HTTP (use HTTPS instead)."
         })
 
-    # Check HTTPS certificate
     if url.startswith("https://") and not check_https_certificate(url):
         vulnerabilities.append({
             "type": "Invalid HTTPS Certificate",
             "message": "The HTTPS certificate is invalid or expired."
         })
 
-    # Check for missing security headers
     missing_headers = check_security_headers(url)
     for header in missing_headers:
         vulnerabilities.append({
