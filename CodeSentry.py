@@ -143,7 +143,6 @@ def analyze_code(file_path):
         with open(file_path, "r") as file:
             content = file.read()
 
-        # Determine the file type based on the extension
         if file_path.endswith(".py"):
             tree = ast.parse(content, filename=file_path)
             for node in ast.walk(tree):
