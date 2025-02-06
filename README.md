@@ -45,7 +45,7 @@
 
 3. **Run the Tool**:
 ```bash
-# Analyze code
+# Analyze source code
 python CodeSentry.py --file <path_to_file> --format <text|json>
 ```
 ```bash
