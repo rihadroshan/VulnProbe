@@ -1,4 +1,4 @@
-**CodeSentry** is a comprehensive tool designed to analyze source code and scan web for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
+**** is a comprehensive tool designed to analyze source code and scan web for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
 
 ## **Features**
 
@@ -72,7 +72,7 @@ python codesentry.py --url https://example.com --format text
 
 ### Example 1: Analyzing Python Code
 ```bash
-python CodeSentry.py --file example.py --format text
+python codesentry.py --file example.py --format text
 ```
 
 **Output**:
@@ -84,7 +84,7 @@ Insecure API: Insecure API 'eval' detected (line 20).
 
 ### Example 2: Scanning a Web
 ```bash
-python CodeSentry.py --url https://example.com --format json
+python codesentry.py --url https://example.com --format json
 ```
 
 **Output**:
@@ -121,7 +121,7 @@ This tool is intended for educational and security testing purposes only. Use it
 
 ## Files in the Repository
 
-- **`CodeSentry.py`**: Main script for code analysis and web scanning.
+- **`.py`**: Main script for code analysis and web scanning.
 - **`requirements.txt`**: Python dependencies for the tool.
 - **`README.md`**: This readme file providing an overview and usage instructions.
 - **`LICENSE`**: MIT License terms.
