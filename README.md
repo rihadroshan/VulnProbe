@@ -50,7 +50,7 @@ python codesentry.py --file <path_to_file> --format <text|json>
 ```
 ```bash
 # Scan web
-python CodeSentry.py --url <web_url> --format <text|json>
+python codesentry.py --url <web_url> --format <text|json>
 
 ```
 
@@ -59,13 +59,13 @@ python CodeSentry.py --url <web_url> --format <text|json>
 ### Analyze a Code File
 
 ```bash
-python CodeSentry.py --file example.py --format json
+python codesentry.py --file example.py --format json
 ```
 
 ### Scan a Web
 
 ```bash
-python CodeSentry.py --url https://example.com --format text
+python codesentry.py --url https://example.com --format text
 ```
 
 ## Examples
