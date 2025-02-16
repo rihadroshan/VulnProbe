@@ -34,7 +34,7 @@
 
 1. **Clone this repository**:  
    ```bash
-   git clone https://github.com/rihadroshan/CodeSentry.git
+   git clone https://github.com/rihadroshan/codesentry.git
    cd CodeSentry
    ```
 
