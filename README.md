@@ -46,7 +46,7 @@
 3. **Run the Tool**:
 ```bash
 # Analyze source code
-python CodeSentry.py --file <path_to_file> --format <text|json>
+python codesentry.py --file <path_to_file> --format <text|json>
 ```
 ```bash
 # Scan web
