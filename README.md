@@ -35,7 +35,7 @@
 1. **Clone this repository**:  
    ```bash
    git clone https://github.com/rihadroshan/codesentry.git
-   cd CodeSentry
+   cd codesentry
    ```
 
 2. **Install Dependencies**:
