@@ -116,9 +116,6 @@ Feel free to open a pull request or open an issue.
 
 Thanks to the open-source community and tools like `esprima`, `javalang`, `ripper`, and `BeautifulSoup` for making this project possible.
 
-## Disclaimer
-This tool is intended for educational and security testing purposes only. Use it responsibly and only on systems you own or have permission to test. The authors are not responsible for any misuse or damage caused by this tool.
-
 ## Files in the Repository
 
 - **`.py`**: Main script for code analysis and web scanning.
