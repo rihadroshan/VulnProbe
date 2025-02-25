@@ -121,7 +121,7 @@ This tool is intended for educational and security testing purposes only. Use it
 
 ## Files in the Repository
 
-- **`.py`**: Main script for code analysis and web scanning.
+- **`codesentry.py`**: Main script for code analysis and web scanning.
 - **`requirements.txt`**: Python dependencies for the tool.
 - **`README.md`**: This readme file providing an overview and usage instructions.
 - **`LICENSE`**: MIT License terms.
