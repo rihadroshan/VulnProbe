@@ -59,7 +59,7 @@ python3 codesentry.py --url <web_url> --format <text|json>
 ### Analyze a Code File
 
 ```bash
-python codesentry.py --file example.py --format json
+python3 codesentry.py --file example.py --format json
 ```
 
 ### Scan a Web
