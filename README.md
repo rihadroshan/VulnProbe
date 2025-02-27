@@ -50,7 +50,7 @@ python3 codesentry.py --file <path_to_file> --format <text|json>
 ```
 ```bash
 # Scan web
-python codesentry.py --url <web_url> --format <text|json>
+python3 codesentry.py --url <web_url> --format <text|json>
 
 ```
 
