@@ -65,14 +65,14 @@ python3 codesentry.py --file example.py --format json
 ### Scan a Web
 
 ```bash
-python codesentry.py --url https://example.com --format text
+python3 codesentry.py --url https://example.com --format text
 ```
 
 ## Examples
 
 ### Example 1: Analyzing Python Code
 ```bash
-python codesentry.py --file example.py --format text
+python3 codesentry.py --file example.py --format text
 ```
 
 **Output**:
