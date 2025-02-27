@@ -84,7 +84,7 @@ Insecure API: Insecure API 'eval' detected (line 20).
 
 ### Example 2: Scanning a Web
 ```bash
-python codesentry.py --url https://example.com --format json
+python3 codesentry.py --url https://example.com --format json
 ```
 
 **Output**:
