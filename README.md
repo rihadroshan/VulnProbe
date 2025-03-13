@@ -14,6 +14,7 @@
   - DOM-based XSS (JavaScript)
   - Use of `innerHTML` (JavaScript)
 
+
 ### Web Scanning
 - **Checks for**:
   - Insecure HTTP vs HTTPS
@@ -23,6 +24,7 @@
   - Mixed content (HTTP resources on HTTPS pages)
   - Clickjacking vulnerabilities
   - Open ports (e.g., 21, 22, 80, 443, 8080, 3306, 3389)
+
 
 ### Reporting
 - **Output Formats**: Plain text or JSON
