@@ -16,7 +16,6 @@
   - DOM-based XSS (JavaScript)
   - Use of `innerHTML` (JavaScript)
 
-
 ### Web Scanning
 - **Checks for**:
   - Insecure HTTP vs HTTPS
