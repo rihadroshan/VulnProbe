@@ -54,7 +54,7 @@
 python3 VulnProbe.py --file <path_to_file> --format <text|json>
 ```
 ```bash
-# Scan web
+Scan web
 python3 VulnProbe.py --url <web_url> --format <text|json>
 
 ```
