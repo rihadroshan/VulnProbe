@@ -1,4 +1,4 @@
-**CodeSentry** is a comprehensive tool designed to analyze source code and scan web for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
+**VulnProbe** is a comprehensive tool designed to analyze source code and scan web for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
 
 
 
@@ -38,8 +38,8 @@
 
 1. **Clone this repository**:  
    ```bash
-   git clone https://github.com/rihadroshan/codesentry.git
-   cd codesentry
+   git clone https://github.com/rihadroshan/VulnProbe.git
+   cd VulnProbe
    ```
 
 2. **Install Dependencies**:
@@ -51,11 +51,11 @@
 3. **Run the Tool**:
 ```bash
 # Analyze source code
-python3 codesentry.py --file <path_to_file> --format <text|json>
+python3 VulnProbe.py --file <path_to_file> --format <text|json>
 ```
 ```bash
 # Scan web
-python3 codesentry.py --url <web_url> --format <text|json>
+python3 VulnProbe.py --url <web_url> --format <text|json>
 
 ```
 
@@ -64,20 +64,20 @@ python3 codesentry.py --url <web_url> --format <text|json>
 ### Analyze a Code File
 
 ```bash
-python3 codesentry.py --file example.py --format json
+python3 VulnProbe.py --file example.py --format json
 ```
 
 ### Scan a Web
 
 ```bash
-python3 codesentry.py --url https://example.com --format text
+python3 VulnProbe.py --url https://example.com --format text
 ```
 
 ## Examples
 
 ### Example 1: Analyzing Python Code
 ```bash
-python3 codesentry.py --file example.py --format text
+python3 VulnProbe.py --file example.py --format text
 ```
 
 **Output**:
@@ -89,7 +89,7 @@ Insecure API: Insecure API 'eval' detected (line 20).
 
 ### Example 2: Scanning a Web
 ```bash
-python3 codesentry.py --url https://example.com --format json
+python3 VulnProbe.py --url https://example.com --format json
 ```
 
 **Output**:
@@ -126,7 +126,7 @@ Use it responsibly and only on systems you own or have permission to test. The a
 
 ## Files in the Repository
 
-- **`codesentry.py`**: Main script for code analysis and web scanning.
+- **`VulnProbe.py`**: Main script for code analysis and web scanning.
 - **`requirements.txt`**: Python dependencies for the tool.
 - **`README.md`**: This readme file providing an overview and usage instructions.
 - **`LICENSE`**: MIT License terms.
