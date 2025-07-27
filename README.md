@@ -1,6 +1,6 @@
 **VulnProbe** is a comprehensive tool designed to analyze source code and scan web for potential vulnerabilities. It identifies security issues in Python, JavaScript, Java, Ruby, and web applications, helping developers secure their projects effectively.
 
-## **Features**
+## **Features** 
 
 ### **Code Analysis**
 - **Supported Languages**: Python, JavaScript, Java, Ruby
