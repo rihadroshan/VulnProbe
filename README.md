@@ -3,7 +3,6 @@
 ## **Features** 
 
 
-
 ### **Code Analysis**
 - **Supported Languages**: Python, JavaScript, Java, Ruby
 - **Detects Vulnerabilities**:
